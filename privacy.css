@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+.terms-box1{
+    max-width: 460px;
+    background-color:rgb(143, 143, 143) ;
+    color: black;
+    font-family: "montse";
+    padding: 60px 30px ;
+}
+.terms-text1{
+    padding: 0 20px;
+    height: 400px;
+    overflow-y: auto;
+    font-size: 14px;
+    font-weight: 500;
+    color:white;
+}
+.terms-text1::-webkit-scrollbar{
+    width: 2px;
+    background-color: black;
+}
+.terms-text1::-webkit-scrollbar-thumb{
+    background-color: red ;
+}
+.terms-text1 h2{
+    text-transform: uppercase;
+}
+h2{
+    margin-top: 50px;
+}
+.terms-box1 h4{
+    font-size: 15px;
+text-align: center;
+padding: 0 40px;
+}
+.terms-box1 h4 span{ 
+    color: #d13639;
+}
+.buttons{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.btn{
+    height: 50px;
+    width: calc(50%-6px);
+    border: 0;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 500;
+    color: white;
+    transition: .3s linear;
+}
+.grey-btn{
+    background-color:rgb(176, 173, 173);
+    color: black;
+    font-family:'montse ';
+}
+.red-btn{
+    color: black;
+    font-family:'montse ';
+}
+.btn::hover{
+    opacity: .6;
+}

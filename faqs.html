@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="faqs.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">SC<span>OP</span></a>
+      <nav class="navbar">
+          <ul>
+        <li><a href="home page.html" class="active">home</a></li>
+        <li><a href="men.html">Men </a>
+          <ul>
+            <li><a href="T-shirts&men.html" >T-shirts</a></li>
+            <li><a href="Jackets&men.html" >Jackets</a></li>
+            <li><a href="Pants&men.html" >Pants</a></li>
+            <li><a href="Glasses&men.html" >Glasses</a></li>
+             
+          </ul>
+      </li>
+      <li><a href="women.html">Women</a>
+        <ul>
+        <li><a href="T-shirts&women.html" >T-shirts</a></li>
+        <li><a href="Jackets&women.html" >Jackets</a></li>
+        <li><a href="Pants&women.html" >Pants</a></li>
+        <li><a href="Glasses&women.html" >Glasses</a></li>
+      </ul>
+      </li>
+          <li><a href="kids.html">Kids</a>
+              <ul>
+                <li><a href="T-shirts&kids.html" >T-shirts</a></li>
+                <li><a href="Pants&kids.html" >Pants</a></li>
+                <li><a href="Jackets&kids.html" >Jackets</a></li> 
+                <li><a href="Glasses&kids.html" >Glasses</a></li>
+              </ul>
+          </li>
+          <li><a href="contact us.html">contact Us</a></li>
+          <li><a href="about us.html">About Us</a></li>
+          </ul>
+        
+  
+        <div class="right-nav">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </nav>
+    </header>
+  
+    <div class="wrapper">
+      <p>The Begninning of a New Asset class</p>
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <button class="accordion">
+          When will i recive my order?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Orders within Greater Cairo & Giza arrive in 3-5 business days. All other Egyptian governorates will receive their orders within a maximum of 6-7 business days.
+International orders may take up to 9/10 business days to be delivered.
+
+Noting that Fridays and Saturdays, as well as regional/national holidays do not count as business days.
+Same-day and next-day delivery services are not supported by our end.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          is it possible to order online and pick the shipment up from any store?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Unfortunately, this service isn't supported.
+All online orders are to be delivered to their designated addresses within the mentioned shipping time-frames.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          can i edit my order after placing it?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            scoop aims for all orders to be prepared and shipped within a couple of hours of receiving them so edits are restricted to ensure a smooth process on our end.
+
+            If a change is urgently necessary, please do not hesitate to contact us and we will gladly do our best to assist you further.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          is it allowed to open the packchaing while the courier awaits?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            This service is not activated. Orders are to be fully accepted upon their receival.
+No partial payments will be tolerated by the third-party shipping company (in case of cash payment upon delivery).
+
+However, we’re committed to providing exceptional post-purchase services to ensure our customers’ satisfaction with their orders.
+Read our exchange and refund policy for reference.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          i am not surre which size to choose any help?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            All our products have a size chart attached within the item's browsing page.
+            Measurements are in centimeters (cms), and a reference picture is always on-hand to assist you on how to measure.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          is your qwustion still unanswerd?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Seriously, our team is here for you!
+
+            Contact us and send your inquiry, our team will get back to you within usual business schedule..
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
+ <!-- 4 boxs -->
+</div>
+</div>
+</section>
+
+
+<div class="newsletter">
+<div class="contnaier">
+	<div class="text">
+		<h4>sign up to newsletter</h4>
+		<p>Get email updates about our latest shop...and receive</p>
+	</div>
+
+	<div class="subscribe-form">
+		<form action="">
+			<input type="email" placeholder="enter your email here...">
+			<button class="btn-srch">Subscribe</button>
+		</form>
+	</div>
+</div>
+</div>
+
+
+<footer>
+<div class="contnaier">
+	<div class="big-rows">
+		<h6 class="logo">sc<span>op</span></h6>
+		<p>FOLLOW OUR SOCIAL MEDIA ACCOUNT TO SEE AL OFFERS!</p>
+			<div class="coical-icon">
+				<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+				<a href="#"><i class="fa-brands fa-twitter"></i></a>
+				<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+			</div>
+	</div>
+
+	  
+  <div class="row">
+    <h2 class="tittle">CUSTOMER CARE</h2>
+    <div class="links">
+        <a href="faqs.html">FAQS</a>
+        <a href="exchange.html">EXCHANGE & REFUND POLICY</a>
+        <a href="privacy.html">PRIVACY POLICY</a>
+   
+    </div>
+</div>
+
+<div class="row">
+    <h2 class="tittle">INFO</h2>
+    <div class="links">
+        <a href="about us.html">About US</a>
+  <a href="review.html">REVIEWS</a>
+    </div>
+</div>
+	<div class="row">
+		<h2 class="tittle">OUR LOCATION</h2>
+		<div class="links">
+			<a href="find us.html#almaza">City Centre Almaza</a>
+                        <a href="find us.html#festival">Cairo Festival City</a>
+                        <a href="find us.html#dandy">DANDY MALL</a>
+                        <a href="find us.html#gouna">El Gouna</a>
+                        <a href="find us.html#alex">ALEXANDRIA</a>
+		</div>
+	</div>
+</div>
+
+<div class="bottom-footer">
+	<div class="content">
+		<p>&copy; 2024 | Made by <span>SCOP</span></p>
+
+		<div class="payment-img">
+			<img src="img/payment-1.png" alt="">
+			<img src="img/payment-2.png" alt="">
+			<img src="img/payment-3.png" alt="">
+			<img src="img/payment-4.png" alt="">
+		</div>
+	</div>
+</div>
+</footer>
+</body>
+</html>
